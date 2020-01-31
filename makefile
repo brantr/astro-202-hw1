@@ -9,9 +9,10 @@ CXX    = g++
 
 INCL   = rk_int.h get_root.h
 
-LIBS   = -lm  -lgsl 
+LIBS   = -lm  -lgsl -lgslcblas
 
-CFLAGS = $(OPTIMIZE) 
+CFLAGS = $(OPTIMIZE)
+
 
 $(EXEC): $(OBJS) 
 	 $(CC) $(OBJS) $(LIBS) -o $(EXEC)   
